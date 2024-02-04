@@ -11,8 +11,7 @@ import java.util.List;
 @RequestMapping("/v1")
 public class CarController {
 
-    @Autowired
-    private CarRepository carRepository;
+    @Autowired CarRepository carRepository;
 
     @PostMapping(path = "/createonecar")
     public Car createOneCar(@RequestBody Car car) {
